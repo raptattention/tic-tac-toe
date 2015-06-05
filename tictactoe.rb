@@ -92,7 +92,7 @@ end
 
 while $win==false do 
     if $player_turn=="O"
-        puts "Player O, it's your turn! Please type which square you want to take."
+        puts "Player O, it's your turn!"
         input=gets.chomp
         check_input(input)
         puts "#{$top_left} | #{$top_middle} | #{$top_right}"
@@ -103,7 +103,7 @@ while $win==false do
         check_win
         $player_turn="X"
     else
-        puts "Player X, it's your turn! Please type which square you want to take."
+        puts "Player X, it's your turn!"
         input=gets.chomp
         check_input(input)
         puts "#{$top_left} | #{$top_middle} | #{$top_right}"
